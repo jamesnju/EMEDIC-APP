@@ -121,5 +121,129 @@ namespace medicineApi.Models
             return response;
         }
 
+        public Response updateProfile(Users users, SqlConnection connection)
+        {
+            Response response = new Response();
+
+            SqlCommand cmd = new SqlCommand("sp_updateProfile", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Fname", users.Fname);
+            cmd.Parameters.AddWithValue("@Sname", users.Sname);
+            cmd.Parameters.AddWithValue("@Password", users.Password);
+            cmd.Parameters.AddWithValue("@Email", users.Email);
+            connection.Open();
+            int i = cmd.ExecuteNonQuery();
+            connection.Close();
+
+            if(i > 0)
+            {
+                response.StatusCode = 200;
+                response.StatusMessage = "Recorde Updated successfuly";
+            }
+            else
+            {
+                response.StatusCode = 100;
+                response.StatusMessage = "Error occured";
+            }
+
+            return response;
+        }
+        public Response addToCart(Cart cart, SqlConnection connection)
+        {
+            Response response = new Response();
+            SqlCommand cmd = new SqlCommand("sp_AddToCart", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Userid", cart.Userid);
+            cmd.Parameters.AddWithValue("@Medicine_id", cart.Medicine_id);
+            cmd.Parameters.AddWithValue("@Unit_price", cart.Unit_price);
+            cmd.Parameters.AddWithValue("@Discount", cart.Discount);
+            cmd.Parameters.AddWithValue("@Quantity", cart.Quantity);
+            cmd.Parameters.AddWithValue("@Totalprice", cart.Totalprice);
+            connection.Open();
+            int i = cmd.ExecuteNonQuery();
+            connection.Close();
+            if (i > 0)
+            {
+                response.StatusCode = 200;
+                response.StatusMessage = "Items Added to cart";
+            }
+            else
+            {
+                response.StatusCode = 100;
+                response.StatusMessage = ("Items not added to cart");
+            }
+            return response;
+        }
+        public Response placeOrder(Users users, SqlConnection connection)
+        {
+            Response response = new Response();
+
+            SqlCommand cmd = new SqlCommand("sp_placeOrder", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Userid", users.Userid);
+            connection.Open();
+            int i = cmd.ExecuteNonQuery();
+            connection.Close();
+            if (i > 0) 
+            {
+                response.StatusCode = 200;
+                response.StatusMessage = ("order placed successfully");
+            }
+            else
+            {
+                response.StatusCode = 100;
+                response.StatusMessage = ("order placed failed");
+
+            }
+            return response;
+
+        }
+        public Response orderList(Users users, SqlConnection connection) {
+            Response response = new Response();
+            List <Orders> listOrder = new List<Orders> ();
+
+            SqlDataAdapter da= new SqlDataAdapter("sp_OrderList", connection);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@UserType", users.Usertype);
+            da.SelectCommand.Parameters.AddWithValue("@Userid", users.Userid);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if(dt.Rows.Count > 0)
+            {
+                for(int i = 0; i < dt.Rows.Count; i++)
+                {
+                    Orders order = new Orders();
+                    order.Orderid = Convert.ToInt32(dt.Rows[i]["Orderid"]);
+                    order.Orderno = Convert.ToString(dt.Rows[i]["Orderno"]);
+                    order.Ordertotal = Convert.ToDecimal(dt.Rows[i]["Ordertotal"]);
+                    order.Orderstatus = Convert.ToString(dt.Rows[i]["Orderstatus"]);
+
+                    listOrder.Add(order);
+                }
+                if(listOrder.Count > 0)
+                {
+                    response.StatusCode = 200;
+                    response.StatusMessage = "Order has been fetched";
+
+                    response.listOrders = listOrder;
+                }
+                else
+                {
+                    response.StatusCode = 100;
+                    response.StatusMessage = "Order has not been fetched";
+
+                    response.listOrders = null;
+                }
+            }
+            else
+            {
+                response.StatusCode = 100;
+                response.StatusMessage = "Order details not Available";
+
+                response.listOrders = null;
+            }
+            return response;
+        }
     }
 }

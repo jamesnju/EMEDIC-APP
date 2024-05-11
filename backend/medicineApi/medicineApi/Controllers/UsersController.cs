@@ -35,10 +35,35 @@ namespace medicineApi.Controllers
         public Response login(Users users) { 
         
             DAL dal = new DAL();
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("").ToString());
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMEDIC").ToString());
             Response response = dal.Login(users, connection);
 
             return response;
         }
+        [HttpPost]
+        [Route("viewUser")]
+        public Response viewUser(Users users)
+        {
+            DAL dal = new DAL();
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMEDIC").ToString());
+
+            Response response = dal.viewUsers(users, connection);
+
+            return response;
+        }
+        [HttpPost]
+        [Route("update")]
+
+        public Response updateProfile(Users user)
+        {
+            DAL dal = new DAL();
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("EMEDIC").ToString());
+
+            Response response = dal.updateProfile(user, connection);
+
+            return response;
+        }
+
+
     }
 }

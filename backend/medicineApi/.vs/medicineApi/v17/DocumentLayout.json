@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\controllers\\medicinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\controllers\\medicinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|c:\\users\\james\\desktop\\projects\\react\\medicine\\backend\\medicineapi\\medicineapi\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EE9F0BF-FE3A-4477-B704-8F312FF6C177}|medicineApi\\medicineApi.csproj|solutionrelative:medicineapi\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,34 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "medicineApi\\Models\\Orders.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\Orders.cs",
+              "RelativeToolTip": "medicineApi\\Models\\Orders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T23:26:53.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "medicineApi\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\Users.cs",
+              "RelativeToolTip": "medicineApi\\Models\\Users.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T23:04:13.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MedicinesController.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Controllers\\MedicinesController.cs",
+              "RelativeDocumentMoniker": "medicineApi\\Controllers\\MedicinesController.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Controllers\\MedicinesController.cs",
+              "RelativeToolTip": "medicineApi\\Controllers\\MedicinesController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T22:24:57.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "medicineApi\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\Cart.cs",
+              "RelativeToolTip": "medicineApi\\Models\\Cart.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA5wBAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T22:10:02.464Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DAL.cs",
               "DocumentMoniker": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\DAL.cs",
               "RelativeDocumentMoniker": "medicineApi\\Models\\DAL.cs",
               "ToolTip": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Models\\DAL.cs",
               "RelativeToolTip": "medicineApi\\Models\\DAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAABIAAAA",
+              "ViewState": "AQIAAOkAAAAAAAAAAAAgwPUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T13:51:29.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "medicineApi\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\James\\Desktop\\PROJECTS\\REACT\\medicine\\backend\\medicineApi\\medicineApi\\Controllers\\UsersController.cs",
               "RelativeToolTip": "medicineApi\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAwAAABAMzMzMzMrwCIAAAArAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBsAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T13:36:31.579Z",
               "EditorCaption": ""
